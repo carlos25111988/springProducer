@@ -1,0 +1,15 @@
+server:
+    port: 8083
+spring:
+  rabbitmq:
+    request:
+      host: 5672
+      port: 5672
+      username: guest
+      password: guest
+      exchange:
+        producer: ex.producer-spring
+      routing-key:
+        producer: rk.producer-spring
+      deadletter:
+        producer: dl.producer-spring
